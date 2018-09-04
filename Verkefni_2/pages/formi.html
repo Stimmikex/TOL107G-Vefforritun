@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header style="background-color:blue">
+        <h1 style="text-align:center">Header</h1>
+    </header>
+    <ol style="border: solid;">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">Form</a></li>
+        <li><a href="tafla.html">Tafla</a></li>
+        <li><a href="texti.html">Texti</a></li>
+    </ol>
+    <div>
+        <h1>Form</h1>
+        <form action="">
+                <fieldset>
+                    <legend>Skráning:</legend>
+                    <label for="nafn" hidden>name of the user.</label>
+                    <label for="email" hidden>email of the user</label>
+                    <label for="pass" hidden>password for the form</label>
+                    <label for="re-pass" hidden>redo the password</label>
+                    Nafn: <input type="text" id="nafn" required><br>
+                    Email*: <input type="email" id="email" required><br>
+                    Password*: <input type="password" id="pass" required><br>
+                    Re-Password*: <input type="password" id="re-pass" placeholder="Lykilorð verða að vera eins" required>
+                </fieldset>
+                <fieldset>
+                    <Legend>Val</Legend>
+                    <h2>Velja Kyn:</h2><br>
+                    <label for="rkyn" hidden> This is selection of radio buttons to tell the gender of the user</label>
+                    <input type="radio" name="Kyn" value="karl" id="rkyn" checked>Karl<br>
+                    <input type="radio" name="Kyn" value="kona" id="rkyn">Kona<br>
+                    <input type="radio" name="Kyn" value="annad" id="rkyn">Annað<br>
+    
+                    <hr>
+                    <h2>Velja Aldur:</h2><br>
+                    <label for="age" hidden>This is the a select menu for your age</label>
+                    <select name="aldur" id="age">
+                        <option value="a1">Yngri en 13 ára</option>
+                        <option value="a2">13-20 ára</option>
+                        <option value="a3">21-65 ára</option>
+                        <option value="a4">Eldri en 65 ára</option>
+                    </select><br>
+
+
+                    <hr>
+                    <h2>Checkbox</h2><br>
+                    <label for="checkbox" hidden>this will send a ticket of your user info to your email.</label>
+                    <input type="checkbox" name="test" id="checkbox">Senda afrit af notandaupplýsingum á netfang<br>
+    
+                    <hr>
+                    <h2>Textarea</h2><br>
+                    <label for="textbox" hidden>This is the textarea</label>
+                    <textarea name="textbox"cols="30" rows="10" id="textbox"></textarea>
+    
+                    <hr>
+                    <button>Submit</button>
+                </fieldset>
+        </form>
+    </div>
+    <footer style="background-color:rgb(0, 255, 76)">
+        <h1 style="text-align:center">Footer</h1>
+    </footer>
+</body>
+</html>
