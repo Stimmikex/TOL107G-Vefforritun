@@ -1,0 +1,116 @@
+html,body {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    max-width: 1080px;
+    font-size: 18px;
+}
+main > h1 {
+
+    border-bottom: 1px solid #ccc;
+}
+/*h1, h2, h3 and the p tag are tranformed here.*/
+h1 {
+    margin-bottom: 2em;
+    font-size: 2em;
+}
+h2 {
+    margin: 0;
+    font-size: 1.667em;
+    color: #999;
+}
+h3 {
+    margin: 0;
+    font-size: 1em;
+}
+p {
+    width: 99%;
+}
+/*  
+    This is for the section where the text is, nth-child is a selecter that will
+    select the child of the section.
+    
+    p:nth-child(x)::firstline this will select the first line of the p section in the section.
+
+    */
+section > p::first-letter {
+    font-size: 2em;
+}
+section > p:nth-child(2)::first-line {
+    background-color: #ccc;
+}
+section > p:nth-child(3)::first-line {
+    background-color: #ddd;
+}
+section > p:nth-child(4)::first-line {
+    background-color: #eee;
+}
+section > p:nth-child(2) {
+    font-size: 1em;
+    margin-left: 0em;
+}
+section > p:nth-child(3) {
+    font-size: 0.889em;
+    margin-left: 2.778em;
+}
+section > p:nth-child(4) {
+    font-size: 0.778em;
+    margin-left: 5.556em;
+}
+/*This is where the style of the button is made.*/
+button {
+    border-left: 0.278em solid #666;
+    border-bottom: 0.278em solid #999;
+    border-top: 0.278em solid #666;
+    border-right: 0.278em solid #999;
+}
+/*This is the function that changes the color then the user presses the button*/
+button:hover {
+    border-left: 0.556em solid #999;
+    border-bottom: 0.556em solid #666;
+    border-top: 0.556em solid #999;
+    border-right: 0.556em solid #666;
+}
+/*Hiddes the h2 tag in the div card-section*/
+.card-section > h2{
+    /*visibility: hidden;*/
+    display: none;
+}
+.cards {
+    max-width: 666px;
+    margin: 0 auto;
+    border-bottom: 1px solid #c00;
+}
+.cards > button {
+    margin: 2em 20em;
+    display: inline;
+}
+.card-section::after {
+    content: "Ekki meira efni";
+    margin: 1em 5.5em;
+    width: 37em;
+}
+.card {
+    display: inline-block;
+    height: 10em;
+    width: 10em;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: 1px solid black;
+}
+.card:nth-child(odd) {
+    background-color: #fff;
+    color: #333;
+}
+.card:nth-child(even) {
+    background-color: #333;
+    color: #fff;
+}
+.cards:hover > .card:nth-child(odd) {
+    background-color: #333;
+    color: #fff;
+}
+.cards:hover > .card:nth-child(even) {
+    background-color: #fff;
+    color: #333;
+}
