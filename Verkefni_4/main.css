@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 28px;
+}
+
+body {
+    background-color: #333;
+    color: #ddd;
+}
+p {
+    font-family: 'Merriweather', serif;
+    line-height: 2;
+}
+h2, h1, header>p, div>p {
+    font-family: 'IM Fell DW Pica', serif;
+}
+header {
+    text-align: center;
+    /* background-image: url("img/trees.jpg"); */
+    background: url("img/trees.jpg");
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: #333;
+    padding: 15%;
+}
+header>h1 {
+    font-size: 3.5em;
+}
+header>h2 {
+    font-size: 2em;
+    margin: 1em;
+}
+header>p {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2em;
+    margin: 0 auto;
+    max-width: 40em;
+    line-height: 1;
+}
+header>p::first-letter {
+    font-size: 1em;
+    float: none;
+}
+body>section>p {
+    max-width: 50em;
+    margin: 0 auto;
+    line-height: 2;
+    padding: 1em;
+}
+blockquote {
+    width: 50%;
+    margin: 0 auto;
+    font-style: italic;
+    text-align: right;
+    padding: 1em;
+}
+blockquote>cite {
+    text-transform: uppercase;
+}
+hr {
+    border: none;
+    width: 100%;
+    height: 60vh;
+    background-attachment: fixed;
+    background-image: url("img/trees.jpg");
+    background-size: cover;
+}
+hr:nth-of-type(1) {
+    background-image: url("img/tree-fog.jpg");
+}
+hr:nth-of-type(2) {
+    background-image: url("img/castle.jpg");
+}
+hr:nth-of-type(3) {
+    background-image: url("img/hands.jpg");
+}
+hr:nth-of-type(4) {
+    background-image: url("img/moon.jpg");
+}
+body>div {
+    color: #333;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url("img/trees.jpg");
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20%;
+    font-size: 2em;
+}
+body>div>p {
+    text-transform: uppercase;
+    font-size: 1em;
+}
+section {
+    width: 50%;
+    margin: 0 auto;
+}
+section>p:first-of-type::first-letter {
+    font-weight: bold;
+    font-size: 6em;
+    margin: 0;
+    padding-right: 0.1em;
+    float: left;
+    line-height: 1;
+}
+footer {
+    width: 100%;
+    background-color:aliceblue;
+    max-width: 50em;
+    text-align: left;
+    margin: 0 auto;
+    padding: 1em 3em;
+    color: #333;
+}
+footer>p>a, footer>ul>li>a  {
+    color: #333;
+    text-decoration: none;
+}
+footer>ul>li {
+    list-style: none
+}
+
+/* font-family: 'IM Fell DW Pica', serif; */
+/* font-family: 'Merriweather', serif; */
