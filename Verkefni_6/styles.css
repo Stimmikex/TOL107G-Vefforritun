@@ -71,8 +71,6 @@ h1 { /*<h1> tag*/
     /*padding-right and -left is just as a style fix*/
     display: flex;
     width: 100%;
-    height: auto;
-    background-size: cover;
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -138,107 +136,25 @@ h1 { /*<h1> tag*/
     line-height: 1;
     word-break: break-word;
 }
-  
-  /* TODO setja upp grid fyrir >= 1000px */
-@media only screen and (min-width: 1490px) {
-    html {
-        background-color: green;
-    }
-  }
-  @media only screen and (min-width: 1000px) {
-    html {
-        background-color: aquamarine;
-    }
-    .grid>.grid__row:nth-of-type(2)>.grid__col:nth-of-type(2) {
-        order: 1;
-    }
-    .grid>.grid__row:nth-of-type(2)>.grid__col:nth-of-type(1) {
-        order: 2;
-    }
-    .card {
-        width: 100%;
-    }
+.card__text {
+    font-size: 1em;
+    line-height: 1.375;
+    overflow: auto;
+    word-break: break-word;
 }
   
-  /* TODO koma mynd fyrir á öðrum stað í < 1000px */
-  @media only screen and (min-width: 800px) {
-    .grid {
-        display: flex;
-        width: 100%;
-        
-    }
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    
-        background: #eee;
-    }
-    
-    .card {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-    
-        margin-bottom: 10px;
-        padding: 10px;
-        width: 100%;
-        max-width: 470px;
-        max-height: 300px;
-        overflow: hidden;
-    
-        background-color: #fff;
-        border: 2px solid #aaa;
-        border-radius: 5px;
-    }
-    
-    .card__title {
-        margin-bottom: 20px;
-    
-        font-size: 1.375rem;
-        line-height: 1;
-        word-break: break-word;
-    }
-    
-    .card__content {
-        display: flex;
-        flex: 1;
-    }
-    
-    .card__text {
-        font-size: 1em;
-        line-height: 1.375;
-        overflow: auto;
-        word-break: break-word;
-    }
-    
-    .card__image {
-        padding-left: 20px;
-        flex: 0 0 150px;
-    }
-    .card__img {
-        height: 100%;
-        max-width: 100%;
-    }
+  /* TODO setja upp grid fyrir >= 1000px */
+@media (min-width: 1490px) {
+
   }
-  @media only screen and (min-width: 700px) {
+  
+  /* TODO koma mynd fyrir á öðrum stað í < 1000px */
+@media (min-width: 700px) {
     /* grid fyrir cards */   
     .card__content {
         display: flex;
         flex-wrap: wrap;
         flex: 1;
-    }
-    
-    .card__text {
-        font-size: 1rem;
-        line-height: 1.375;
-        overflow: auto;
-        word-break: break-word;
-    }
-      /* grid fyrir efni, setja þarf upp í html */
-    .grid {
-        display: flex;
-        width: 100%;
     }
     .grid__row {
         display: flex;
@@ -255,9 +171,74 @@ h1 { /*<h1> tag*/
         padding-right: 10px;
         padding-left: 10px;
     }
-    
-    
   }
+@media (min-width: 800px) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        background: #eee;
+    }
+
+    .card {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 10px;
+        padding: 10px;
+        max-width: 470px;
+        max-height: 300px;
+        overflow: hidden;
+
+        background-color: #fff;
+        border: 2px solid #aaa;
+        border-radius: 5px;
+    }
+
+    .card__title {
+        margin-bottom: 20px;
+
+        font-size: 1.375rem;
+        line-height: 1;
+        word-break: break-word;
+    }
+
+    .card__content {
+        display: flex;
+        flex: 1;
+    }
+
+    .card__image {
+        padding-left: 20px;
+        flex: 0 0 150px;
+    }
+    .card__img {
+        height: 100%;
+        max-width: 100%;
+    }
+}
+    
+@media (min-width: 1000px) {
+    .grid>.grid__row:nth-of-type(2)>.grid__col:nth-of-type(2) {
+        order: 1;
+    }
+    .grid>.grid__row:nth-of-type(2)>.grid__col:nth-of-type(1) {
+        order: 2;
+    }
+    .card {
+        width: 100%;
+    }
+    .grid__row {
+        flex-direction: row;
+        flex-flow: wrap;
+    }
+    .grid__col {
+        width: 50%;
+        height: auto;
+    }
+}
   
   /* TODO útfæra grid fyrir cards */
   
