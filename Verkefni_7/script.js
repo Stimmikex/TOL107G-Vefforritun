@@ -108,11 +108,11 @@ function Exit() {
  * Sniðugt væri að færa það að búa til spurningu í nýtt fall sem ask() kallar í.
  */
 function ask() {
-    var rand = randomNumber(1,4);
-    var tal1 = 0;
-    var tal2 = 0;
-    var spurn = null;
-    var sum;
+    let rand = randomNumber(1,4);
+    let tal1 = 0;
+    let tal2 = 0;
+    let spurn = null;
+    let sum;
     switch (rand) {
         case 1:
             tal1 = randomNumber(1, 100);
@@ -137,9 +137,9 @@ function ask() {
             break;
         case 4:
             tal1 = randomNumber(2, 10);
-            tal2 = randomNumber(2, 10);
-            var sum = tal1/tal2;
-            var spurn = tal1 +" / "+tal2 
+            tal2 = tal1*randomNumber(2, 10);
+            sum = tal2/tal1;
+            spurn = tal2 +" / "+tal1 
             return [spurn, sum];
             break;
     
