@@ -1,4 +1,4 @@
-Verkefni_1:
+Verkefni 1:
     Verkefnina lýsing: 
       Setja skal upp tvær síður, aðgengilegar af internetinu.
         1. Forsíða index.html með einhverjum texta ásamt tengli yfir á aðra síðu
@@ -9,12 +9,12 @@ Verkefni_1:
 
 Setja skal síður upp á heimasvæði RHÍ, (http://rhi.hi.is/node/155) undir möppu .public_html/vefforritun/verkefni1 svo verkefnið verði aðgengilegt á https://notendur.hi.is/<notendanafn>/vefforritun/verkefni1 þar sem <notendnafn> er notendanafnið þitt (t.d. osk).
 
-1.
+Verkefni 1.
   index.html
     <body> // þetta er "the body" sem er líkaminn á verkefninu.
       <p></p> // <p> er notað til að skila texta strengjum.
       <button> // <button> er notað til að gera takka, notað oft í <form> töggum.
-        <a href="about.html"> // <a href> er notað til að koma einstaklingum á milli síða, það færi í þessu tilviki frá index -> about.html.
+        <a href="about.html"> // <a href> er notað til að koma einstaklingum á milli síða, það færi í þessu tilviki frá index -> about.html
       </button>
     </body>
     
@@ -29,5 +29,6 @@ Setja skal síður upp á heimasvæði RHÍ, (http://rhi.hi.is/node/155) undir m
         <b></b>
       </p>
       <a href="mail-to: sot13@hi.is"> // mail-to er notað til að senda email til viðkomandi.
-      <img src="mynd.jpg/png"> // skilar mynd frá src.
+      <img src="img/mynd.jpg/png"> // skilar mynd frá src.
     </body>
+ 
